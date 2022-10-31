@@ -1,0 +1,98 @@
+.formcontainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(to right, #f83600, #fe8c00);
+  overflow: hidden;
+}
+
+.formcontainer .mainlogo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.formcontainer .brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.formcontainer img {
+  height: 3rem;
+}
+
+.formcontainer h2 {
+  color: black;
+  text-transform: uppercase;
+}
+
+.formcontainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #d7d9d8;
+  border-radius: 2rem;
+  padding: 3rem 5rem;
+}
+
+.formcontainer .button {
+  background: linear-gradient(to right, #f83600, #fe8c00);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  transition: 0.5s ease-in-out;
+  width: 100%;
+}
+.formcontainer .button:hover {
+  background: linear-gradient(to right, #fe8c00, #f83600);
+  color: black;
+}
+
+.formcontainer span {
+  color: black;
+  text-align: center;
+}
+.formcontainer a {
+  color: #e28503;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+@media screen and (min-width: 250px) and (max-width: 350px) {
+  .formcontainer form {
+    gap: 0.5rem;
+    width: 98%;
+    padding: 2rem 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .formcontainer .button {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 500px) {
+  .formcontainer form {
+    gap: 1rem;
+    width: 90%;
+    padding: 2rem 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .formcontainer .button {
+    padding: 0.5rem 1rem;
+  }
+}
